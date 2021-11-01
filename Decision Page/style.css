@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    transition: all 0.3s ease-in;
+    min-height: 100vh;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.container{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100px;
+    width: 100%;
+    background: black;
+    opacity: 0.8;
+    z-index: 10;
+}
+
+.container .title{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.patientContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 50%;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+}
+
+.patientContainer:hover{
+    transition: all 0.3s ease-in;
+    background-color: #03a9f4;
+}
+
+.patientContainer:hover a{
+    color: #fff;
+}
+
+.doctorContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    z-index: 3;
+    transition: all 0.3s ease-out;
+}
+
+.doctorContainer:hover{
+    transition: all 0.3s ease-in;
+    background-color: #f43648;
+}
+
+.doctorContainer:hover a{
+    color: #fff;
+}
+
+
+
+
+
+
+
