@@ -31,8 +31,7 @@
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("sss",  $username, $email, $pass);
                 $stmt->execute();
-                echo "New record inserted successfully";
-                //header("location:checkUser.php");
+                header("location:../Decision Page/index.html");
             } else{
                 echo "Someone already used that email";
             }
