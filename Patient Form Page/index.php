@@ -15,42 +15,42 @@
         <div class="title">
             Patient Registration Form
         </div>
-        <form action="patient.php">
+        <form action="patient.php" method="POST">
             <div class="form">
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
                 <div class="inputField">
                     <label>First Name</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="firstname">
                 </div>
 
                 <div class="inputField">
                     <label>Last Name</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="lastname">
                 </div>
 
                 <div class="inputField">
                     <label>Phone Number</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="phonenumber">
                 </div>
 
                 <div class="inputField">
                     <label>Age</label>
-                    <input type="number" class="input">
+                    <input type="text" class="input" name="age">
                 </div>
 
                 <div class="inputField">
                     <label>Gender</label>
-                    <input type="text" class="input">
+                    <input type="text" class="input" name="gender">
                 </div>
 
                 <div class="inputField">
                     <label>Date of Birth</label>
-                    <input type="date" class="input">
+                    <input type="text" class="input" name="dayOfBirth">
                 </div>
 
                 <div class="inputField">
                     <label>Addresss</label>
-                    <textarea class="textarea"></textarea>
+                    <textarea class="textarea" name="address"></textarea>
                 </div>
 
                 <div class="inputField terms">
