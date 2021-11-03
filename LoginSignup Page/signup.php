@@ -31,7 +31,7 @@
                 $stmt = $conn->prepare($INSERT);
                 $stmt->bind_param("sss",  $username, $email, $pass);
                 $stmt->execute();
-                header("location:../Decision Page/index.html");
+                header("location:../Decision Page/index.html?email=$email");
             } else{
                 echo "Someone already used that email";
             }
