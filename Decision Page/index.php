@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="patientContainer">
-        <a href='../Patient Form Page/index.html?email=<?php echo $email?>' class="patient">Patient</a>
+        <a href='../Patient Form Page/index.php?email=<?php echo $email?>' class="patient">Patient</a>
     </div>
 
     <div class="doctorContainer">
