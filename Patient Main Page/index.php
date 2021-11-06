@@ -1,3 +1,23 @@
+<?php
+    $email = $_GET['email'];
+
+    $host = "localhost";
+    $dbUsername = "root";
+    $dbPassword = "";
+    $dbname = "clinicregistration";
+    $portnumber = "3308";
+
+    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
+
+    $sql="SELECT * FROM patientreg WHERE email='$email'";
+
+    $query =  mysqli_query($conn, $sql);
+    
+    while($row=mysqli_fetch_array($query)){
+        $firstname = $row['firstname'];
+        $lastname = $row['lastname'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +38,7 @@
     </header>
 
     <div class="title">
-        <h1>Hello, user first name user last to the Clinic Registartion web service.</h1>
+        <h1>Hello, <?php echo $firstname ?>  <?php echo $lastname ?> to the Clinic Registartion web service.</h1>
     </div>
 
     <div class="title">
