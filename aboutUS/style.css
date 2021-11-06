@@ -1,0 +1,136 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+  }
+  
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.ourTeam{
+    text-align: center;
+    color: black;
+    animation: fadeIn ease 3s
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 2px 8px 12px 2px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    background-color: #fff;
+}
+#one{
+    transform: translateX(3000px);
+    animation: slideLeft 2s ease-in-out forwards .8s;
+}
+#two{
+    transform: translateX(3000px);
+    animation: slideLeft 3s ease-in-out forwards .8s;
+}
+#three{
+    transform: translateX(3000px);
+    animation: slideLeft 4s ease-in-out forwards .8s;
+}
+#four{
+    transform: translateX(7000px);
+    animation: slideLeft2 5s ease-in-out forwards .8s;
+}
+#five{
+    transform: translateX(7000px);
+    animation: slideLeft2 6s ease-in-out forwards .8s;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+}
+
+.contact:hover {
+    background-color: #555;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.topnav a:hover {
+    background-color: #66FCF1;
+    color: black;
+}
+.topnav a.active {
+    background-color: #1F2833;
+    color: white;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(3000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideLeft2 {
+    0% {
+        transform: translateX(7000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
