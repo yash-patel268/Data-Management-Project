@@ -22,7 +22,7 @@
     </div>
 
     <div class="doctorContainer">
-        <a href='https:\/\/youtube.com' class="doctor">Doctor</a>
+        <a href='../Doctor Form Page/index.php?email=<?php echo $email?>' class="doctor">Doctor</a>
     </div>
 </body>
 </html>
