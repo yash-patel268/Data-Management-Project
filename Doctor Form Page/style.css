@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f43648;
+    padding: 0 10px;
+}
+
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.15);
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #f43648;
+    text-align: center;
+}
+
+.wrapper .form{
+    width: 100%;
+}
+
+.wrapper .form .inputField{
+    margin-bottom: 15px;
+    display: flex;
+    text-align: center;
+}
+
+.wrapper .form .inputField label{
+     width: 200px;
+     margin-top: 2%;
+     margin-right: 10px;
+     font-size: 14px;
+}
+
+.wrapper .form .inputField .input,
+.wrapper .form .inputField .textarea{
+     width: 100%;
+     outline: none;
+     border: 1px solid;
+     font-size: 15px;
+     padding: 8px 10px;
+     border-radius: 3px;
+     transition: all 0.3s ease;
+}
+
+.wrapper .form .inputField textarea{
+     resize: none;
+     height: 125px;
+}
+
+.wrapper .form .inputField .input:focus,
+.wrapper .form .inputField .textarea{
+     border: 1px solid #f43648;
+}
+
+.wrapper .form .inputField p{
+     font-size: 14px;
+     margin-top: 1.5%;
+}
+
+.wrapper .form .inputField .check{
+     width: 15px;
+     height: 15px;
+     position: relative;
+     display: block;
+     cursor: pointer;
+}
+
+.wrapper .form .inputField .check input[type="checkbox"]{
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     opacity: 0;
+}
+
+.wrapper .form .inputField .check .checkmark{
+     width: 15px;
+     height: 15px;
+     border: 1px solid #f43648;
+     display: block;
+     position: relative;
+}
+
+.wrapper .form .inputField .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color:transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    
+}
+
+.wrapper .form .inputField .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #f43648;
+}
+
+.wrapper .form .inputField .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+    left: 2px;
+}
+
+.wrapper .form .inputField .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #f43648;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .inputField:last-child{
+    margin-bottom: 0%;
+}
+
+.wrapper .form .inputField .btn:hover{
+    background: #42c4ff;
+}
+
