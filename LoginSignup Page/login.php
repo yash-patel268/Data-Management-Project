@@ -24,9 +24,16 @@
 	                
 	        $count=mysqli_num_rows($result);
 	        if($count==1){
-	            $_SESSION['login_user']=$username;
-                echo "valid login";
-                //header("location:checkUser.php");
+                $sql="SELECT * FROM patientreg WHERE username='$username'";
+                $query =  mysqli_query($conn, $sql);
+                $count=mysqli_num_rows($query);    
+                if($count==1){
+                    while($row=mysqli_fetch_array($query)){
+                        $email = $row['email'];
+                    }
+                    header("location:../Patient Main Page/index.php?email=". $email);
+                    //header("location:checkUser.php");
+                }
 	                	
 			} else {
 			    echo "invalid login";
