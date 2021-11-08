@@ -15,7 +15,7 @@
         <div class="title">
             Doctor Registration Form
         </div>
-        <form action="patient.php" method="POST">
+        <form action="doctor.php" method="POST">
             <div class="form">
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
                 <div class="inputField">
