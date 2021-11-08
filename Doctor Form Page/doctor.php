@@ -39,11 +39,12 @@
     $address = $_POST['address'];
     echo "$address\n";
     
-    $INSERT = "INSERT INTO patientreg (firstname, lastname, phonenumber, age, gender, dayOfBirth, username, email, pass, address) values(?,?,?,?,?,?,?,?,?,?) ";
+    $INSERT = "INSERT INTO doctorreg (docfirstname, doclastname, docphonenumber, docage, docgender, docdayOfBirth, username, email, pass, docaddress) values(?,?,?,?,?,?,?,?,?,?) ";
 
     $stmt = $conn->prepare($INSERT);
     $stmt->bind_param("ssssssssss",  $firstname,$lastname,$phonenumber,$age, $gender,$dayOfBirth,$username,$email,$pass,$address);
     $stmt->execute();
 
-    header("location:../Patient Main Page/index.php?email=$email");
+    //header("location:../Patient Main Page/index.php?email=$email");
+    echo "doctor signed up";
 ?>
