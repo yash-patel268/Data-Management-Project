@@ -24,6 +24,11 @@
                 </div>
 
                 <div class="inputField">
+                    <label>Doctor Last Name</label>
+                    <input type="text" class="input" name="doclastname">
+                </div>
+
+                <div class="inputField">
                     <label>Start Date</label>
                     <input type="text" class="input" name="start">
                 </div>
