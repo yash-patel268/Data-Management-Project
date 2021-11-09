@@ -8,61 +8,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Patient Registration Form</title>
+    <title>Patient Presciption Form</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="title">
-            Patient Registration Form
+            Patient Prescription Form
         </div>
         <form action="patient.php" method="POST">
             <div class="form">
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
                 <div class="inputField">
-                    <label>First Name</label>
-                    <input type="text" class="input" name="firstname">
+                    <label>Presciption Name</label>
+                    <input type="text" class="input" name="prescriptionname">
                 </div>
 
                 <div class="inputField">
-                    <label>Last Name</label>
-                    <input type="text" class="input" name="lastname">
+                    <label>Start Date</label>
+                    <input type="text" class="input" name="start">
                 </div>
 
                 <div class="inputField">
-                    <label>Phone Number</label>
-                    <input type="text" class="input" name="phonenumber">
+                    <label>End Date</label>
+                    <input type="text" class="input" name="end">
                 </div>
 
                 <div class="inputField">
-                    <label>Age</label>
-                    <input type="text" class="input" name="age">
-                </div>
-
-                <div class="inputField">
-                    <label>Gender</label>
-                    <input type="text" class="input" name="gender">
-                </div>
-
-                <div class="inputField">
-                    <label>Date of Birth</label>
-                    <input type="text" class="input" name="dayOfBirth">
-                </div>
-
-                <div class="inputField">
-                    <label>Addresss</label>
-                    <textarea class="textarea" name="address"></textarea>
-                </div>
-
-                <div class="inputField terms">
-                    <label class="check">
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                    <p>Agree to terms and conditions</p>
-                </div> 
-
-                <div class="inputField">
-                    <input type="submit" value="Register" class="btn">
+                    <input type="submit" value="Submit" class="btn">
                 </div>
             </div>
         </form>
