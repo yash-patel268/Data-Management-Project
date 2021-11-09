@@ -1,4 +1,5 @@
 <?php 
+     $email = $_GET['email'];
     $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
@@ -8,6 +9,7 @@
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
 
     $sql="SELECT * FROM doctorreg";
+    $result = mysqli_query($conn, $sql);
 
 ?>
 
@@ -20,10 +22,29 @@
     <title>View Doctors in system</title>
 </head>
 <body>
-    <tabel>
+    <table align="center" border="1px" style="width:600px; line-height:40px;">
         <tr>
-            <th colspan="3"><h2>View Doctors</h2></th>
+            <th colspan="4"><h2>View Doctors</h2></th>
         </tr>
-    </tabel>
+        <t>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+        </t>
+        <?php
+            while($rows=mysqli_fetch_assoc($result)){
+        ?>
+            <tr>
+                <td align="center"><?php echo $rows['doclastname']; ?></td>
+                <td align="center"><?php echo $rows['doclastname']; ?></td>
+                <td align="center"><?php echo $rows['docgender']; ?></td>
+                <td align="center"><?php echo $rows['email']; ?></td>
+            </tr>
+        <?php
+            }
+        ?>
+    </table>
+    <a href="../Patient Main Page/index.php?email=<?php echo $email?>">click to go back</a>
 </body>
 </html>
