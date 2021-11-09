@@ -31,7 +31,7 @@
     <header>
         <nav>
             <ul class="navArea">
-                <li><a href="#" class="nava">View Doctors</a></li>
+                <li><a href="../Patient Main Page Tables/doctorTable.php" class="nava">View Doctors</a></li>
             </ul>
         </nav>
         <a href="../index.html" class="navBtn">Log out</a>
