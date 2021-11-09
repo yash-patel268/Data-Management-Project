@@ -19,6 +19,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>View Doctors in system</title>
 </head>
 <body>
@@ -45,6 +46,6 @@
             }
         ?>
     </table>
-    <a href="../Patient Main Page/index.php?email=<?php echo $email?>">click to go back</a>
+    <a href="../Patient Main Page/index.php?email=<?php echo $email?>">CLICK HERE TO RETURN TO MAIN PAGE</a>
 </body>
 </html>
