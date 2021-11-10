@@ -8,33 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Patient Presciption Form</title>
+    <title>Patient Appointment Form</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="title">
-            Patient Prescription Form
+            Patient Appointment Form
         </div>
         <form action="prescription.php" method="POST">
             <div class="form">
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
-                <div class="inputField">
-                    <label>Presciption Name</label>
-                    <input type="text" class="input" name="prescriptionname">
-                </div>
-
+            
                 <div class="inputField">
                     <label>Doctor Last Name</label>
                     <input type="text" class="input" name="doclastname">
                 </div>
 
                 <div class="inputField">
-                    <label>Start Date</label>
+                    <label>Date of Appointment</label>
                     <input type="text" class="input" name="start">
                 </div>
 
                 <div class="inputField">
-                    <label>End Date</label>
+                    <label>Time of Appointment</label>
                     <input type="text" class="input" name="end">
                 </div>
 
