@@ -45,6 +45,6 @@
     $stmt->bind_param("ssssssssss",  $firstname,$lastname,$phonenumber,$age, $gender,$dayOfBirth,$username,$email,$pass,$address);
     $stmt->execute();
 
-    //header("location:../Patient Main Page/index.php?email=$email");
+    header("location:../Doctor Main Page/index.php?email=$email");
     echo "doctor signed up";
 ?>
