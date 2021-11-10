@@ -9,13 +9,13 @@
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
 
-    $sql="SELECT * FROM patientreg WHERE email='$email'";
+    $sql="SELECT * FROM doctorreg WHERE email='$email'";
 
     $query =  mysqli_query($conn, $sql);
     
     while($row=mysqli_fetch_array($query)){
-        $firstname = $row['firstname'];
-        $lastname = $row['lastname'];
+        $firstname = $row['docfirstname'];
+        $lastname = $row['doclastname'];
     }
 ?>
 <!DOCTYPE html>
