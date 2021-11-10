@@ -16,7 +16,7 @@
         $patientid = $row['patientid'];
     }
 
-    $sql="SELECT * FROM prescription WHERE patientid='$patientid'";
+    $sql="SELECT * FROM appointments WHERE patientid='$patientid'";
     $result = mysqli_query($conn, $sql);
     
 
@@ -29,25 +29,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>View Your Presciptions</title>
+    <title>View Your Appointments</title>
 </head>
 <body>
     <table align="center" border="1px" style="width:600px; line-height:40px;">
         <tr>
-            <th colspan="3"><h2>Your Prescriptions</h2></th>
+            <th colspan="2"><h2>Your Appointments</h2></th>
         </tr>
         <t>
-            <th>Presciption Name</th>
-            <th>Start Date</th>
-            <th>End Date</th>
+            <th>Chosen Date of Appointment</th>
+            <th>Time of Appointment</th>
         </t>
         <?php
             while($rows=mysqli_fetch_assoc($result)){
         ?>
             <tr>
-                <td align="center"><?php echo $rows['prescriptionname']; ?></td>
-                <td align="center"><?php echo $rows['start']; ?></td>
-                <td align="center"><?php echo $rows['end']; ?></td>
+                <td align="center"><?php echo $rows['choosendate']; ?></td>
+                <td align="center"><?php echo $rows['time']; ?></td>
             </tr>
         <?php
             }
