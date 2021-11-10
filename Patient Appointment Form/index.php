@@ -15,7 +15,7 @@
         <div class="title">
             Patient Appointment Form
         </div>
-        <form action="prescription.php" method="POST">
+        <form action="appointment.php" method="POST">
             <div class="form">
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
             
