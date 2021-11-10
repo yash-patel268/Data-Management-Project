@@ -26,12 +26,12 @@
 
                 <div class="inputField">
                     <label>Date of Appointment</label>
-                    <input type="text" class="input" name="start">
+                    <input type="text" class="input" name="chosendate">
                 </div>
 
                 <div class="inputField">
                     <label>Time of Appointment</label>
-                    <input type="text" class="input" name="end">
+                    <input type="text" class="input" name="time">
                 </div>
 
                 <div class="inputField">
