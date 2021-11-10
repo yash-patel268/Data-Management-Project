@@ -49,7 +49,7 @@
         <div class="buttons">
             <a href="../Patient Prescription Form/index.php?email=<?php echo $email?>" class="btn btn-1">New Presciption</a>
             <a href="../Patient Main Page Tables/prescriptionTable.php?email=<?php echo $email?>" class="btn btn-1">Current Presciptions</a>
-            <a href="" class="btn btn-1">New Appointment</a>
+            <a href="../Patient Appointment Form/index.php?email=<?php echo $email?>" class="btn btn-1">New Appointment</a>
             <a href="" class="btn btn-1">Current Appointment</a>
         </div>
     </div>
