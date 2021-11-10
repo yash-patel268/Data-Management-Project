@@ -17,10 +17,9 @@
         $patientid = $row['patientid'];
     }
 
-    $prescriptionName = $_POST['prescriptionname'];
     $docLastName = $_POST['doclastname'];
-    $start = $_POST['start'];
-    $end = $_POST['end'];
+    $chosenDate = $_POST['chosendate'];
+    $time = $_POST['time'];
 
     $sql="SELECT * FROM doctorreg WHERE doclastname='$docLastName'";
 
@@ -30,10 +29,10 @@
         $doctorid = $row['doctorid'];
     }
 
-    $INSERT = "INSERT INTO prescription (patientid, doctorid, prescriptionname, start, end) values(?,?,?,?,?)";
+    $INSERT = "INSERT INTO appointments (patientid, choosendate, time, doctorid) values(?,?,?,?)";
 
     $stmt = $conn->prepare($INSERT);
-    $stmt->bind_param("sssss",  $patientid,$doctorid, $prescriptionName, $start, $end);
+    $stmt->bind_param("ssss",  $patientid, $chosenDate, $time, $doctorid);
     $stmt->execute();
 
     header("location:../Patient Main Page/index.php?email=$email");
