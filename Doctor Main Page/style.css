@@ -29,7 +29,7 @@ html, body{
 }
 
 .container .buttons .btn-1{
-    background: #03a9f4;
+    background: #f43648;
     color: #fff;
     border-radius: 30px;
     transition: transform 0.3s ease;
@@ -93,7 +93,7 @@ header{
 }
 
 .navArea li a:hover{
-    color: #03a9f4;
+    color: #f43648;
 }
 
 .navBtn{
@@ -108,7 +108,7 @@ header{
 }
 
 .navBtn:hover{
-    background: #03a9f4;
+    background: #f43648;
 }
 
 .title{
