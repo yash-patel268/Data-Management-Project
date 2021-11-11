@@ -50,7 +50,7 @@
             <a href="../Doctor Main Page Tables/prescriptionTable.php?email=<?php echo $email?>" class="btn btn-1">Presciptions Given</a>
             <a href="../Doctor Main Page Tables/prescriptionTableAll.php?email=<?php echo $email?>" class="btn btn-1">All Presciptions</a>
             <a href="../Doctor Main Page Tables/appointmentTable.php?email=<?php echo $email?>" class="btn btn-1">Appointments</a>
-            <a href="" class="btn btn-1">All Appointments</a>
+            <a href="../Doctor Main Page Tables/appointmentTableAll.php?email=<?php echo $email?>" class="btn btn-1">All Appointments</a>
         </div>
     </div>
 </body>
