@@ -21,17 +21,17 @@
             
                 <div class="inputField">
                     <label>Doctor Last Name</label>
-                    <input type="text" class="input" name="doclastname">
+                    <input type="text" class="input" name="doclastname" required>
                 </div>
 
                 <div class="inputField">
                     <label>Date of Appointment</label>
-                    <input type="text" class="input" name="chosendate">
+                    <input type="date" class="input" name="chosendate" required>
                 </div>
 
                 <div class="inputField">
                     <label>Time of Appointment</label>
-                    <input type="text" class="input" name="time">
+                    <input type="time" class="input" name="time" required>
                 </div>
 
                 <div class="inputField">
