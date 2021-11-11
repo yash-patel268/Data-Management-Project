@@ -48,7 +48,7 @@
     <div class="container">
         <div class="buttons">
             <a href="../Doctor Main Page Tables/prescriptionTable.php?email=<?php echo $email?>" class="btn btn-1">Presciptions Given</a>
-            <a href="" class="btn btn-1">All Presciptions</a>
+            <a href="../Doctor Main Page Tables/prescriptionTableAll.php?email=<?php echo $email?>" class="btn btn-1">All Presciptions</a>
             <a href="" class="btn btn-1">Appointments</a>
             <a href="" class="btn btn-1">All Appointments</a>
         </div>
