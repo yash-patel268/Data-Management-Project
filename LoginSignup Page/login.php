@@ -34,6 +34,17 @@
                     header("location:../Patient Main Page/index.php?email=". $email);
                     //header("location:checkUser.php");
                 }
+
+                $sql="SELECT * FROM doctorreg WHERE username='$username'";
+                $query =  mysqli_query($conn, $sql);
+                $count=mysqli_num_rows($query);    
+                if($count==1){
+                    while($row=mysqli_fetch_array($query)){
+                        $email = $row['email'];
+                    }
+                    header("location:../Doctor Main Page/index.php?email=". $email);
+                    //header("location:checkUser.php");
+                }
 	                	
 			} else {
 			    echo "invalid login";
