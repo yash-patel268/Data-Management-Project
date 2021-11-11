@@ -20,37 +20,37 @@
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
                 <div class="inputField">
                     <label>First Name</label>
-                    <input type="text" class="input" name="firstname">
+                    <input type="text" placeholder="first name" class="input" name="firstname" required>
                 </div>
 
                 <div class="inputField">
                     <label>Last Name</label>
-                    <input type="text" class="input" name="lastname">
+                    <input type="text" placeholder="last name" class="input" name="lastname" required>
                 </div>
 
                 <div class="inputField">
                     <label>Phone Number</label>
-                    <input type="text" class="input" name="phonenumber">
+                    <input type="text" placeholder="XXX-XXX-XXXX" class="input" name="phonenumber" required>
                 </div>
 
                 <div class="inputField">
                     <label>Age</label>
-                    <input type="text" class="input" name="age">
+                    <input type="number" placeholder="Age" class="input" name="age" required>
                 </div>
 
                 <div class="inputField">
                     <label>Gender</label>
-                    <input type="text" class="input" name="gender">
+                    <input type="text" placeholder="Gender" class="input" name="gender" required>
                 </div>
 
                 <div class="inputField">
                     <label>Date of Birth</label>
-                    <input type="text" class="input" name="dayOfBirth">
+                    <input type="date" class="input" name="dayOfBirth" required>
                 </div>
 
                 <div class="inputField">
-                    <label>Addresss</label>
-                    <textarea class="textarea" name="address"></textarea>
+                    <label>Address</label>
+                    <textarea class="textarea" placeholder="Address" name="address"></textarea>
                 </div>
 
                 <div class="inputField terms">
