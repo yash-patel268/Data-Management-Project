@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="inputField">
-                    <label>Addresss</label>
+                    <label>Address</label>
                     <textarea class="textarea" placeholder="address" name="address" required></textarea>
                 </div>
 
