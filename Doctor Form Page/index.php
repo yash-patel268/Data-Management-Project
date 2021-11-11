@@ -55,7 +55,7 @@
 
                 <div class="inputField terms">
                     <label class="check">
-                        <input type="checkbox">
+                        <input type="checkbox" required>
                         <span class="checkmark"></span>
                     </label>
                     <p>Agree to terms and conditions</p>
