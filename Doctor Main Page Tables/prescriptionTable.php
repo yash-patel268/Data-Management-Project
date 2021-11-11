@@ -8,15 +8,15 @@
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
 
-    $sql="SELECT * FROM patientreg WHERE email='$email'";
+    $sql="SELECT * FROM doctorreg WHERE email='$email'";
 
     $query =  mysqli_query($conn, $sql);
     
     while($row=mysqli_fetch_array($query)){
-        $patientid = $row['patientid'];
+        $doctorid = $row['doctorid'];
     }
 
-    $sql="SELECT * FROM prescription WHERE patientid='$patientid'";
+    $sql="SELECT * FROM prescription WHERE doctorid='$doctorid'";
     $result = mysqli_query($conn, $sql);
     
 
@@ -34,17 +34,30 @@
 <body>
     <table align="center" border="1px" style="width:600px; line-height:40px;">
         <tr>
-            <th colspan="3"><h2>Your Prescriptions</h2></th>
+            <th colspan="5"><h2>Your Prescriptions</h2></th>
         </tr>
         <t>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>Presciption Name</th>
             <th>Start Date</th>
             <th>End Date</th>
         </t>
         <?php
             while($rows=mysqli_fetch_assoc($result)){
+                $patientid = $rows['patientid'];
+                $sql="SELECT * FROM patientreg WHERE patientid='$patientid'";
+
+                $query =  mysqli_query($conn, $sql);
+    
+                while($row=mysqli_fetch_array($query)){
+                    $firstname = $row['firstname'];
+                    $lastname = $row['lastname'];
+                }
         ?>
             <tr>
+                <td align="center"><?php echo $firstname; ?></td>
+                <td align="center"><?php echo $lastname; ?></td>
                 <td align="center"><?php echo $rows['prescriptionname']; ?></td>
                 <td align="center"><?php echo $rows['start']; ?></td>
                 <td align="center"><?php echo $rows['end']; ?></td>
