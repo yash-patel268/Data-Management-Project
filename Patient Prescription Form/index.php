@@ -20,22 +20,22 @@
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
                 <div class="inputField">
                     <label>Presciption Name</label>
-                    <input type="text" class="input" name="prescriptionname">
+                    <input type="text" class="input" name="prescriptionname" required>
                 </div>
 
                 <div class="inputField">
                     <label>Doctor Last Name</label>
-                    <input type="text" class="input" name="doclastname">
+                    <input type="text" class="input" name="doclastname" required>
                 </div>
 
                 <div class="inputField">
                     <label>Start Date</label>
-                    <input type="text" class="input" name="start">
+                    <input type="date" class="input" name="start" required>
                 </div>
 
                 <div class="inputField">
                     <label>End Date</label>
-                    <input type="text" class="input" name="end">
+                    <input type="date" class="input" name="end" required>
                 </div>
 
                 <div class="inputField">
