@@ -23,7 +23,7 @@
     <title>View Doctors in system</title>
 </head>
 <body>
-    <table align="center" border="1px" style="width:600px; line-height:40px;">
+    <table align="center" border="1px" style="width:1000px; line-height:40px;">
         <tr>
             <th colspan="8"><h2>View Doctors</h2></th>
         </tr>
