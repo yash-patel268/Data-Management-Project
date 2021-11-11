@@ -58,6 +58,6 @@
             }
         ?>
     </table>
-    <a href="../Patient Main Page/index.php?email=<?php echo $email?>">CLICK HERE TO RETURN TO MAIN PAGE</a>
+    <a href="../Doctor Main Page/index.php?email=<?php echo $email?>">CLICK HERE TO RETURN TO MAIN PAGE</a>
 </body>
 </html>
