@@ -25,7 +25,7 @@
             <th colspan="1"><h2>6th View</h2></th>
         </tr>
         <t>
-            <th>Total number of accounts made</th>
+            <th>Highest Login ID A User has</th>
         </t>
         <?php
             while($rows=mysqli_fetch_assoc($query)){
