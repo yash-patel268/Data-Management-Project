@@ -26,7 +26,7 @@
             var xmlDoc = xml.responseXML;
             var table = "<tr><th>First Name</th><th>Last Name</th></tr>";
             var x = xmlDoc.getElementsByTagName("patient");
-            for (i = 0; i <x.length; i++) { 
+            for (i = 1; i <x.length; i++) { 
             table += "<tr><td>" + x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue +
             "</td><td>" +
             x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue +
