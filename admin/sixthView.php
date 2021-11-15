@@ -7,7 +7,7 @@
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
     
-    $sql = "SELECT MAX(loginid) FROM logintable";
+    $sql = "SELECT COUNT(loginid) FROM logintable";
 
     $query =  mysqli_query($conn, $sql);
 ?>
@@ -25,13 +25,13 @@
             <th colspan="1"><h2>6th View</h2></th>
         </tr>
         <t>
-            <th>Highest Login ID A User has</th>
+            <th>Total number of users within the system</th>
         </t>
         <?php
             while($rows=mysqli_fetch_assoc($query)){
         ?>
             <tr>
-                <td align="center"><?php echo $rows['MAX(loginid)']; ?></td>
+                <td align="center"><?php echo $rows['COUNT(loginid)']; ?></td>
             </tr>
         <?php
             }

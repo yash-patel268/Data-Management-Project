@@ -7,7 +7,7 @@
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname, $portnumber);
     
-    $sql = "SELECT MAX(appointmentid) FROM appointments";
+    $sql = "SELECT COUNT(appointmentid) FROM appointments";
 
     $query =  mysqli_query($conn, $sql);
 ?>
@@ -25,13 +25,13 @@
             <th colspan="1"><h2>10th View</h2></th>
         </tr>
         <t>
-            <th>Highest Appointment ID</th>
+            <th>Total number of appointments within the system</th>
         </t>
         <?php
             while($rows=mysqli_fetch_assoc($query)){
         ?>
             <tr>
-                <td align="center"><?php echo $rows['MAX(appointmentid)']; ?></td>
+                <td align="center"><?php echo $rows['COUNT(appointmentid)']; ?></td>
             </tr>
         <?php
             }
