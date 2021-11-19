@@ -81,4 +81,4 @@ Most of the website is straight forward, however, there must be at least one doc
 The signup process is fairly straight fowards and there is input limitation to prevent incorrect entries.
 
 ### Admin page
-To reach the admin page is fairly simple as all that is required to do is add "admin/admin.html" to the main index.html url which is the index.html that is launch when you select the virtual host created for this application. The reason for no direct access from the main website is prevent user which are not admins to access it. (The url will look like "Clinicregistration/index.html/admin/admin.html")
+To reach the admin page is fairly simple as all that is required to do is add "admin/admin.html" to the main index.html url which is the index.html that is launch when you select the virtual host created for this application. The reason for no direct access from the main website is prevent users which are not admins to access it. (The url will look like "Clinicregistration/index.html/admin/admin.html")
