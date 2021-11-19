@@ -18,6 +18,7 @@ To create database in WAMP you must click on the icon in the tool bar and select
  `pass` varchar(45) DEFAULT NULL,
  PRIMARY KEY (`loginid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
 2. CREATE TABLE `patientreg` (
  `patientid` int(11) NOT NULL AUTO_INCREMENT,
  `firstname` varchar(45) DEFAULT NULL,
@@ -32,6 +33,7 @@ To create database in WAMP you must click on the icon in the tool bar and select
  `address` varchar(45) DEFAULT NULL,
  PRIMARY KEY (`patientid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
 3. CREATE TABLE `doctorreg` (
  `doctorid` int(11) NOT NULL AUTO_INCREMENT,
  `docfirstname` varchar(45) DEFAULT NULL,
@@ -46,6 +48,7 @@ To create database in WAMP you must click on the icon in the tool bar and select
  `docaddress` varchar(45) DEFAULT NULL,
  PRIMARY KEY (`doctorid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
 4. CREATE TABLE `appointments` (
  `appointmentid` int(11) NOT NULL AUTO_INCREMENT,
  `patientid` varchar(45) DEFAULT NULL,
@@ -54,6 +57,7 @@ To create database in WAMP you must click on the icon in the tool bar and select
  `doctorid` varchar(45) DEFAULT NULL,
  PRIMARY KEY (`appointmentid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
 5. CREATE TABLE `prescription` (
  `prescriptionid` int(11) NOT NULL AUTO_INCREMENT,
  `patientid` varchar(45) DEFAULT NULL,
