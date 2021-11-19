@@ -73,3 +73,6 @@ After creating the tables open the www directory by clicking on the WAMP icon in
 
 ### Add virtual host
 Open a web browser and type in localhost, this should take you to WAMP main webpage. Here click on add virtual host and fill out the name to be "clinicregistration" and add the absolute file path to the extracted folder. This will add a shortcut to the application on the main page on the bottom right corner which can be clicked to access the application.
+
+## Application Usage
+Most of the website is straight forward, however, there must be at least one doctor account created to allow for proper functionality.
