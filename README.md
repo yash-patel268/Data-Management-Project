@@ -32,5 +32,36 @@ To create database in WAMP you must click on the icon in the tool bar and select
  `address` varchar(45) DEFAULT NULL,
  PRIMARY KEY (`patientid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
+3. CREATE TABLE `doctorreg` (
+ `doctorid` int(11) NOT NULL AUTO_INCREMENT,
+ `docfirstname` varchar(45) DEFAULT NULL,
+ `doclastname` varchar(45) DEFAULT NULL,
+ `docphonenumber` varchar(45) DEFAULT NULL,
+ `docage` varchar(45) DEFAULT NULL,
+ `docgender` varchar(45) DEFAULT NULL,
+ `docdayOfBirth` varchar(45) DEFAULT NULL,
+ `username` varchar(45) DEFAULT NULL,
+ `email` varchar(45) DEFAULT NULL,
+ `pass` varchar(45) DEFAULT NULL,
+ `docaddress` varchar(45) DEFAULT NULL,
+ PRIMARY KEY (`doctorid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
+4. CREATE TABLE `appointments` (
+ `appointmentid` int(11) NOT NULL AUTO_INCREMENT,
+ `patientid` varchar(45) DEFAULT NULL,
+ `choosendate` varchar(45) DEFAULT NULL,
+ `time` varchar(45) DEFAULT NULL,
+ `doctorid` varchar(45) DEFAULT NULL,
+ PRIMARY KEY (`appointmentid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
+5. CREATE TABLE `prescription` (
+ `prescriptionid` int(11) NOT NULL AUTO_INCREMENT,
+ `patientid` varchar(45) DEFAULT NULL,
+ `doctorid` varchar(45) DEFAULT NULL,
+ `prescriptionname` varchar(45) DEFAULT NULL,
+ `start` varchar(45) DEFAULT NULL,
+ `end` varchar(45) DEFAULT NULL,
+ PRIMARY KEY (`prescriptionid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
 
 
