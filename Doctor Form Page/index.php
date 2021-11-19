@@ -30,7 +30,7 @@
 
                 <div class="inputField">
                     <label>Phone Number</label>
-                    <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input" name="docphonenumber" required>
+                    <input type="tel" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="input" name="phonenumber" required>
                 </div>
 
                 <div class="inputField">
