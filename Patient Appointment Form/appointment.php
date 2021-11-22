@@ -17,11 +17,11 @@
         $patientid = $row['patientid'];
     }
 
-    $docLastName = $_POST['doclastname'];
+    $docEmail = $_POST['docemail'];
     $chosenDate = $_POST['chosendate'];
     $time = $_POST['time'];
 
-    $sql="SELECT * FROM doctorreg WHERE doclastname='$docLastName'";
+    $sql="SELECT * FROM doctorreg WHERE email='$docEmail'";
 
     $query =  mysqli_query($conn, $sql);
     

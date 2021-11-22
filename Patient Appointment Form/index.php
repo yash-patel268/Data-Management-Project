@@ -20,8 +20,8 @@
                 <input type="hidden" name="email" value="<?php echo $email ?>" /> 
             
                 <div class="inputField">
-                    <label>Doctor Last Name</label>
-                    <input type="text" class="input" name="doclastname" required>
+                    <label>Doctor Email</label>
+                    <input type="text" class="input" name="docemail" required>
                 </div>
 
                 <div class="inputField">
