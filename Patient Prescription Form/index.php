@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="inputField">
-                    <label>Doctor Last Email</label>
+                    <label>Doctor Email</label>
                     <input type="text" class="input" name="docemail" required>
                 </div>
 
