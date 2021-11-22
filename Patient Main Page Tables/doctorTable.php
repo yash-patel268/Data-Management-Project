@@ -38,7 +38,7 @@
         ?>
             <tr>
                 <td align="center"><?php echo $rows['doclastname']; ?></td>
-                <td align="center"><?php echo $rows['doclastname']; ?></td>
+                <td align="center"><?php echo $rows['docfirstname']; ?></td>
                 <td align="center"><?php echo $rows['docgender']; ?></td>
                 <td align="center"><?php echo $rows['email']; ?></td>
             </tr>
