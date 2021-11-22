@@ -18,11 +18,11 @@
     }
 
     $prescriptionName = $_POST['prescriptionname'];
-    $docLastName = $_POST['doclastname'];
+    $docEmail = $_POST['docemail'];
     $start = $_POST['start'];
     $end = $_POST['end'];
 
-    $sql="SELECT * FROM doctorreg WHERE doclastname='$docLastName'";
+    $sql="SELECT * FROM doctorreg WHERE email='$docEmail'";
 
     $query =  mysqli_query($conn, $sql);
     

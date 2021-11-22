@@ -24,8 +24,8 @@
                 </div>
 
                 <div class="inputField">
-                    <label>Doctor Last Name</label>
-                    <input type="text" class="input" name="doclastname" required>
+                    <label>Doctor Last Email</label>
+                    <input type="text" class="input" name="docemail" required>
                 </div>
 
                 <div class="inputField">
