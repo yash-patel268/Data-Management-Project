@@ -79,7 +79,7 @@ mysqli_query($conn, $sql);
 function drop_db()
 {
     $dbname = "clinicregistration";
-    $servername = "localhost:3307";
+    $servername = "localhost:3308";
     $username = "root";
     $password = "";
     $conn = mysqli_connect($servername, $username, $password);
@@ -99,7 +99,7 @@ function drop_db()
 function backup_db()
 {
     $dbname = "clinicregistration";
-    $servername = "localhost:3307";
+    $servername = "localhost:3308";
     $username = "root";
     $password = "";
     $conn = mysqli_connect($servername, $username, $password);
