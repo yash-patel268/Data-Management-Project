@@ -57,7 +57,7 @@ function create_conn_db_tables()
         docaddress VARCHAR(45))";
 mysqli_query($conn, $sql);
    
-$sql = "CREATE TABLE prescription(
+$sql = "CREATE TABLE appointments(
     appointmentsid INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     patientid VARCHAR(45),
     choosendate VARCHAR(45),
@@ -65,7 +65,7 @@ $sql = "CREATE TABLE prescription(
     doctorid VARCHAR(45))";
 mysqli_query($conn, $sql);
 
-$sql = "CREATE TABLE appointments(
+$sql = "CREATE TABLE prescription(
     prescriptionid INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     patientid VARCHAR(45),
     doctorid VARCHAR(45),
