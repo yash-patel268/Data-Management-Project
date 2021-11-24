@@ -84,7 +84,7 @@ To create database in WAMP you must click on the icon in the tool bar and select
 Most of the website is straight forward, however, there must be at least one doctor account created to allow for proper functionality. But for some context by click the virtual host created in the earlier text it will take you to the main index.html where you are able to navigate through the navbar.
 
 ### Signup for patient and doctor
-The signup process is fairly straight fowards and there is input limitation to prevent incorrect entries.
+The signup process is fairly straight foward and there is input limitation to prevent incorrect entries.
 
 ### Admin page
 To reach the admin page is fairly simple as all that is required to do is add "admin/admin.html" to the main index.html url which is the index.html that is launch when you select the virtual host created for this application. The reason for no direct access from the main website is prevent users which are not admins to access it. (The url will look like "Clinicregistration/index.html/admin/admin.html")
