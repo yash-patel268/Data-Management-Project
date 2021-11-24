@@ -24,20 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-   
-            <div>
-                <p><?php echo $message ?></p>
-            </div>
+    <div>
+        <p><?php echo $message ?></p>
+    </div>
             
-            <div>
-            <form method="post">
-                <input class="button" type="submit" name="create" value="Create DB & tables" />
-                <input class="button" type="submit" name="download" value="Backup" />
-                <input class="button" type="submit" name="delete" value="Delete DB" />
-            </form>
-            </div>
-            <div class="signIn">
-            <a href="LoginSignup Page/index.html" class="signInLink">Login/Signup</a>
-        </div>
+    <div>
+        <form method="post">
+            <input class="button" type="submit" name="create" value="Create DB & tables" />
+            <input class="button" type="submit" name="download" value="Backup" />
+            <input class="button" type="submit" name="delete" value="Delete DB" />
+        </form>
     </div>
 </body>
