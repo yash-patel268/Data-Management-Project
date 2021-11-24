@@ -2,7 +2,7 @@
 ////////////////////////////////////////////////////
 function create_conn_db_tables()
 {
-    $servername = "localhost:3307";
+    $servername = "localhost:3308";
     $username = "root";
     $password = "";
     // Create connection
