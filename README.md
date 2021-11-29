@@ -3,7 +3,7 @@
 This is the final project for the Data management course. Our choice for this project was to make a clinic registration application to demostrate our knowledge of databases and how to work with them. The creation of this web application was done through the languages that include HTML, CSS, PHP, Javascript, XML, and SQL. 
 
 ### Helpful links
-- [Report]()
+- [Final Report]()
 - [Mini-report](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Mini-Report.pdf)
 - [Phase 1](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Phase%201_%20Project%20Proposal%20.pdf)
 - [Phase 2](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Phase%202_%20Clinic%20Regstration%20(updated).pdf)
