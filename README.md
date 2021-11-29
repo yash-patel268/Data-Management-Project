@@ -4,6 +4,7 @@ This is the final project for the Data management course. Our choice for this pr
 
 ### Helpful links
 - [Report]()
+- [Mini-report](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Mini-Report.pdf)
 - [Phase 1](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Phase%201_%20Project%20Proposal%20.pdf)
 - [Phase 2](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Phase%202_%20Clinic%20Regstration%20(updated).pdf)
 - [Slides](https://github.com/yash-patel268/Data-Management-Project/blob/master/Formal%20Report/Clinic%20Registration-Presentation-Group10.pdf)
