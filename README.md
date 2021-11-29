@@ -89,10 +89,10 @@ To create database in WAMP you must click on the icon in the tool bar and select
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8
 
 ## Application Usage
-Most of the website is straight forward, however, there must be at least one doctor account created to allow for proper functionality. But for some context by click the virtual host created in the earlier text it will take you to the main index.html where you are able to navigate through the navbar.
+Most of the website is straight forward, however, there must be at least one doctor account created to allow for proper functionality. But for some context by clicking the virtual host created in the earlier text it will take you to the main index.html where you are able to navigate through the navbar.
 
 ### Signup for patient and doctor
 The signup process is fairly straight foward and there is input limitation to prevent incorrect entries.
 
 ### Admin page
-To reach the admin page is fairly simple as all that is required to do is remove "index.html" and replace it with "admin/admin.html" to the url which can be done after launching the virtual host created for this application. The reason for no direct access from the main website is prevent users which are not admins to access it. (The url will look like "Clinicregistration/admin/admin.html")
+To reach the admin page is fairly simple as all that is required to do is remove "index.html" and replace it with "admin/admin.html" to the url which can be done after launching the virtual host created for this application. The reason for no direct access from the main website is prevent users which are not admins to access it. (The url will look like "Clinicregistration/admin/admin.html") Within this section of the website is the 10 views created in phase 2, and all XML components required for the project
